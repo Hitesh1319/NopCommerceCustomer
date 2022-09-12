@@ -9,6 +9,7 @@ public class PageFactory {
     private CustomerPage customerPage;
     private LogoutPage logoutPage;
     private VendorsPage vendorsPage;
+    private Dashboard dashboard;
 
     public PageFactory(WebDriver driver) {
         this.driver = driver;
@@ -47,5 +48,12 @@ public class PageFactory {
             vendorsPage = new VendorsPage(driver);
         }
         return vendorsPage;
+    }
+
+    public Dashboard getDashboard() {
+        if (dashboard == null) {
+            dashboard = new Dashboard(driver);
+        }
+        return dashboard;
     }
 }
