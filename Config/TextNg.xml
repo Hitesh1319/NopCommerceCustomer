@@ -1,11 +1,35 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Cases" verbose="1">
 
-    <test name="Verify that user is able to search product">
+    <test name="Verify that user is able to search customers">
         <parameter name="browserName" value="Chrome"></parameter>
         <parameter name="testRunId1" value="TC-1"/>
         <classes>
-            <class name=""/>
+            <class name="NopCommerce.Test.VerifyThatUserIsAbleToSearchCustomer"/>
+        </classes>
+    </test>
+
+    <test name="Verify that user is able to search customers in FireFox">
+        <parameter name="browserName" value="FireFox"></parameter>
+        <parameter name="testRunId2" value="TC-2"/>
+        <classes>
+            <class name="NopCommerce.Test.VerifyThatUserIsAbleToSearchCustomer"/>
+        </classes>
+    </test>
+
+        <test name="Verify that user is able to search Vendors">
+            <parameter name="browserName" value="Chrome"></parameter>
+            <parameter name="testRunId2" value="TC-3"/>
+            <classes>
+                <class name="NopCommerce.Test.VerifyThatUserIsAbleToSearchVendors"/>
+            </classes>
+        </test>
+
+    <test name="Verify that user is able to search Vendors in FireFox">
+        <parameter name="browserName" value="FireFox"></parameter>
+        <parameter name="testRunId2" value="TC-4"/>
+        <classes>
+            <class name="NopCommerce.Test.VerifyThatUserIsAbleToSearchVendors"/>
         </classes>
     </test>
 
