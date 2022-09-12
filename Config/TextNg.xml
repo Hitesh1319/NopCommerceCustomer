@@ -5,7 +5,15 @@
         <parameter name="browserName" value="Chrome"></parameter>
         <parameter name="testRunId1" value="TC-1"/>
         <classes>
-            <class name=""/>
+            <class name="NopCommerce.Test.VerifyThatUserIsAbleToSearchCustomer"/>
+        </classes>
+    </test>
+
+    <test name="Verify that user is able to search product in FireFox">
+        <parameter name="browserName" value="FireFox"></parameter>
+        <parameter name="testRunId2" value="TC-2"/>
+        <classes>
+            <class name="NopCommerce.Test.VerifyThatUserIsAbleToSearchCustomer"/>
         </classes>
     </test>
 
