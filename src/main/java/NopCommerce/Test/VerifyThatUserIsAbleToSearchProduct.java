@@ -7,7 +7,7 @@ public class VerifyThatUserIsAbleToSearchProduct extends BaseClass {
     @Test
     public void searchProduct() throws IOException {
         pageFactory.getLoginPage().login();
-        pageFactory.getDashboard().dashboard();
+        pageFactory.getDashboard().searchProduct();
         pageFactory.getLogoutPage().logout();
     }
 }
